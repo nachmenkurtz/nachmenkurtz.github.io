@@ -1,18 +1,15 @@
 ---
 layout: page
-title: About
+title: אודות
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+די מהר, ממש די מהר אני עובר ממקום למקום!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+בהתחלה כתבתי בבלוגר את [האתגרים של מתחיל בלינוקס](https://linuxuserstip.blogspot.com/), בהמשך בניתי מאגר בגיטהאב [Learn-Linux](https://github.com/Nachmen-Kurtz/Learn-Linux), וכעת ממש בלוג אישי! משהו רציני. אז קצת הסבר:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+1. בבלוגר כתבתי פוסטים פשוטים ממש בבסיס של הכרת מערכת לינוקס.
+2. לאחר מכן, כשהתחלתי ללמוד קורס לינוקס, כתבתי סיכומים והעליתי למאגר בגיטהאב,
+3. וכעת אני ממשיך לכתוב פוסטים בנושאאים שונים בלינוקס, וכאן הוא המקום המתאים.
 
-
-[jekyll-organization]: https://github.com/jekyll
+אני מקווה שאוכל לרכז את כל הפוסטים שכתבתי בבלוגר ובגיטהאב כאן. ואם לא, תקראו את זה שם...
