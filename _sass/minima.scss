@@ -49,3 +49,14 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+
+pre, code {
+  direction: ltr;
+  text-align: left;
+}
