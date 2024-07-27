@@ -71,6 +71,6 @@ sudo dnf install micro
 
 ## מקורות:
 
-- https://github.com/sharkdp/bat
+- [bat](https://github.com/sharkdp/bat)
 
-- https://micro-editor.github.io/
+- [micro editor](https://micro-editor.github.io)
