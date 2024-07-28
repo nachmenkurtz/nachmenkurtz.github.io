@@ -1,6 +1,6 @@
 ---
 layout: post
-title: שדרוג הטרמינל - חלק שני: oh my zsh
+title: שדרוג הטרמינל חלק שני - oh my zsh
 date: 2024-07-05
 ---
 
