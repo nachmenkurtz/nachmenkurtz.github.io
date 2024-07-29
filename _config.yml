@@ -52,4 +52,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-markdown: GFM
+markdown: kramdown
