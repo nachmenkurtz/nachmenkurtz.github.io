@@ -31,6 +31,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 plugins:
   - jekyll-feed
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -50,3 +51,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+markdown: GFM
