@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-18T02:41:43+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learn Linux</title><subtitle>ללמוד לינוקס, האתגרים של מתחיל בלינוקס, ומאמרים לתחילים בלינוקס, הכל מכל כל נמצא כאן.</subtitle><entry><title type="html">עורכי טקסט - מבוא</title><link href="http://localhost:4000/2024/08/18/%D7%A2%D7%95%D7%A8%D7%9B%D7%99-%D7%98%D7%A7%D7%A1%D7%98-%D7%9E%D7%91%D7%95%D7%90.html" rel="alternate" type="text/html" title="עורכי טקסט - מבוא" /><published>2024-08-18T00:00:00+03:00</published><updated>2024-08-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/08/18/%D7%A2%D7%95%D7%A8%D7%9B%D7%99-%D7%98%D7%A7%D7%A1%D7%98---%D7%9E%D7%91%D7%95%D7%90</id><content type="html" xml:base="http://localhost:4000/2024/08/18/%D7%A2%D7%95%D7%A8%D7%9B%D7%99-%D7%98%D7%A7%D7%A1%D7%98-%D7%9E%D7%91%D7%95%D7%90.html"><![CDATA[<h1 id="עורכי-טקסט---מבוא">עורכי טקסט - מבוא</h1>
+<p>עורך טקסט (Text Editor) הינו בין הכלים הבסיסיים והראשוניים של מערכת ההפעלה. ללא עורך טקסט לא היינו יכולים לכתוב קוד, לא היינו יכולים לכתוב תוכניות, ולא היינו יכולים לנהל מערכת הפעלה. בפוסט הזה והבאים אחריו בעז”ה אתמקד בעורכי טקסט בסביבת לינוקס.</p>
+
+<h2 id="מהו-עורך-טקסט">מהו עורך טקסט?</h2>
+<p>אם הינכם משתמשי חלונות יש סיכוי שתחשבו: “רגע, אתה מתכוון לוורד?” אז לא, וורד הוא מעבד תמלילים. לצערנו בחלונות יש כל כך הרבה תוכנות, אבל את הכלי הבסיסי ביותר הם “שכחו” לתת: עורך טקסט. גם היום - 2024, בחלונות 11 (ועוד מעט 12) עדיין למשתמשי חלונות אין עורך טקסט.</p>
+
+<p>מעבד תמלילים הינו תוכנה אשר נועדה ‘לשכתב’ הרצאה או שיעור וכדו’, ויש בה אמצעים שונים שעוזרים לתת צבע ומשקל לנכתב. למשל: כותרות, צבע טקסט, צבע רקע, גודל הפונט, עובי הפונט, פונט נטוי, פונט עם קו תחתי, ועוד ועוד.</p>
+
+<p>עורך טקסט הוא תוכנה (קשה לומר שהוא תוכנה, מתאים יותר לומר שהוא כלי, כלי עזר של המערכת) שבה ניתן לקרוא לכתוב ולערוך קבצים של מערכת ההפעלה, או בכלל לכתוב קבצי טקסט קוד וכיו”ב. ניתן לכתוב ולקרוא בו אך ורק תווי <code class="language-plaintext highlighter-rouge">ASCII</code>.</p>
+
+<h2 id="עורכי-טקסט-במערכות-דמויי-יוניקס">עורכי טקסט במערכות דמויי יוניקס</h2>
+<p>במשפחת יוניקס ודמויי יוניקס עורך הטקסט מקבל מקום של כבוד. הסיבה היא פשוטה: המערכת היא טקסט. קבצים שבתוכם כתוב קוד. לפעמים הקוד הוא דמוי אנגלית, ולפעמים הקוד הוא בשפת מכונה. אבל תמיד קוד. וכדי לרשום ולערוך ולקרוא קוד - יש להעזר בכלי עורך טקסט.</p>
+
+<p>ומכיוון שכך, ללינוקס פותחו במשך השנים עשרות עורכי טקסט. חלקם פשוטים, וחלקם עוצמתיים במיוחד עם כלים בלתי רגילים. הרעיונות היו כל כך טובים עד שתוכלו למצוא אותם בהרבה עורכי טקסט וערכי קוד שיישמו חלק מהרעיונות.</p>
+
+<p>בסדרה זו אכיר לכם בעז”ה שלושה עורכי טקסט נפוצים במיוחד ממשפחת עורך הטקסט Vim אשר זמינים למשתמשי לינוקס: הראשון הוא Vi - שנכתב עבור יוניקס בשנות השבעים של המאה הקודמת, השני הוא Vim - עורך מבוסס על הראשון עם שיפורים משמעותיים, והשלישי Neovim - המבוסס על השני, עם מגוון עצום של אפשריות.</p>
+
+<p>אזהרה: טכני במיוחד! 👨🏻‍💻</p>]]></content><author><name></name></author><summary type="html"><![CDATA[עורכי טקסט - מבוא עורך טקסט (Text Editor) הינו בין הכלים הבסיסיים והראשוניים של מערכת ההפעלה. ללא עורך טקסט לא היינו יכולים לכתוב קוד, לא היינו יכולים לכתוב תוכניות, ולא היינו יכולים לנהל מערכת הפעלה. בפוסט הזה והבאים אחריו בעז”ה אתמקד בעורכי טקסט בסביבת לינוקס.]]></summary></entry><entry><title type="html">כינויים לפקודות (alias)</title><link href="http://localhost:4000/2024/08/01/%D7%9B%D7%99%D7%A0%D7%95%D7%99%D7%99%D7%9D-%D7%9C%D7%A4%D7%A7%D7%95%D7%93%D7%95%D7%AA-(alias).html" rel="alternate" type="text/html" title="כינויים לפקודות (alias)" /><published>2024-08-01T00:00:00+03:00</published><updated>2024-08-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/08/01/%D7%9B%D7%99%D7%A0%D7%95%D7%99%D7%99%D7%9D-%D7%9C%D7%A4%D7%A7%D7%95%D7%93%D7%95%D7%AA-(alias)</id><content type="html" xml:base="http://localhost:4000/2024/08/01/%D7%9B%D7%99%D7%A0%D7%95%D7%99%D7%99%D7%9D-%D7%9C%D7%A4%D7%A7%D7%95%D7%93%D7%95%D7%AA-(alias).html"><![CDATA[<h1 id="פקודות-לא-חייבות-להיות-ארוכות">פקודות לא חייבות להיות ארוכות!</h1>
+<p>בשגרת העבודה יש לנו מספר פקודות שיוצא לנו להקליד אותן כמעט כל יום, ולפעמים כמה פעמים ביום. היה נחמד אילו יכולנו לקצר את הפקודות, או אפילו לחסוך כמה 🤏🏻. למטרה זו - ועוד כמה - ישנה את התוכנה הנפלאה <code class="language-plaintext highlighter-rouge">alias</code> , כינויים לפקודות.</p>
+
+<h2 id="כיצד-ליצור-כינוי-לפקודה">כיצד ליצור כינוי לפקודה</h2>
+<p>לעתים קרובות אני נצרך להגיע לספריית <code class="language-plaintext highlighter-rouge">Documents/Summaries/~</code> , אוכל ליצור כינוי באמצעות הפקודה הבאה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">gosum</span><span class="o">=</span><span class="s1">'cd ~/Documents/Summaries'</span>
+</code></pre></div></div>
+
+<p>הסבר קצר:</p>
+
+<ol>
+  <li>אנו מפעילים את התוכנה <code class="language-plaintext highlighter-rouge">alias</code> .</li>
+  <li>אנו בוחרים כינוי, במקרה הנוכחי בחרתי בהלחם של go - sum, היינו לך לספריית Summaries.</li>
+  <li>אנו כותבים סימן שווה, שמשמעו השמה.</li>
+  <li>הערך של הכינוי הוא הפקודה <code class="language-plaintext highlighter-rouge">cd ~/Documents/Summaries</code> , בהדגשה שיש לכתוב את הנתיב האבסולוטי.</li>
+</ol>
+
+<p>זו היא דוגמא מאוד פשוטה, וניתן לעשות עם כינויי פקודות דברים הרבה יותר יעילים.</p>
+
+<h2 id="צפייה-ועריכה-של-כינויים">צפייה ועריכה של כינויים</h2>
+<p>אם שכחתי מה הפקודה שמכילה הכינוי, אוכל לבדוק זאת באמצעות הפעלת <code class="language-plaintext highlighter-rouge">alias</code> ולאחריה הכינוי. למשל בכינוי שהוזכר למעלה <code class="language-plaintext highlighter-rouge">gosum</code>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span>gosum
+</code></pre></div></div>
+
+<p>אקבל את התוכן של הכינוי, כך:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">gosum</span><span class="o">=</span><span class="s1">'cd ~/Documents/Summaries'</span>
+</code></pre></div></div>
+
+<p>ואם תרצו לראות את כל הכינויים הקיימים - גם של ברירת המחדל של המעטפת - הקלידו <code class="language-plaintext highlighter-rouge">alias</code>.</p>
+
+<h3 id="עריכת-כינויים">עריכת כינויים</h3>
+<p>לאחר שיצרתי כינוי אני יכול לשנות אותו ולערוך את הפקודה שהכינוי מכיל באמצעות כתיבת הכינוי ולהזין לתוכה תוכן חדש.</p>
+
+<p>למשל אם אני רוצה לשנות את הנתיב של <code class="language-plaintext highlighter-rouge">gosum</code> שיוביל אותי לספריית <code class="language-plaintext highlighter-rouge">Documents</code> אכתוב זאת כך:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">gosum</span><span class="o">=</span><span class="s1">'cd ~/Documents'</span>
+</code></pre></div></div>
+
+<h3 id="מחיקת-כינויים">מחיקת כינויים</h3>
+<p>כדי למחוק כינוי אשתמש בפקודה <code class="language-plaintext highlighter-rouge">unalias</code> ושם הכינוי. לדוגמה הכינוי <code class="language-plaintext highlighter-rouge">gosum</code>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">unalias </span>gosum
+</code></pre></div></div>
+
+<h2 id="דוגמאות-לשימוש-עם-כינויי-פקודות">דוגמאות לשימוש עם כינויי פקודות</h2>
+<p>להלן אפרט מספר רעיונות שניתן ליישם באמצעות כינויי פקודות: כינויים לפקודות פשוטות, כינוי אחד שכולל מספר פקודות, קריאה לסקריפט, וכינוי לכינויים.</p>
+
+<h3 id="פקודות-פשוטות">פקודות פשוטות</h3>
+<p>כמו שהדגמתי למעלה, גם פקודות פשוטות ניתן להכניס לכינוי קצר. זה יכול להיות ממש יעיל אם למשל אני צריך לקרוא קובץ בתדירות גבוהה, אני יכול ליצור כינוי לפקודה שתפתח את קורא הקבצים <code class="language-plaintext highlighter-rouge">cat</code> עם הקובץ המדובר. לדוגמה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">cm</span><span class="o">=</span><span class="s1">'cat ~/my_file'</span>
+</code></pre></div></div>
+
+<p>כאשר <code class="language-plaintext highlighter-rouge">cm</code> הוא קיצור של cat ו- my_file.</p>
+
+<p><em>הערה!</em></p>
+
+<p>כשיוצרים כינוי כדאי לשים לב לשני דברים:</p>
+<ul>
+  <li>הכינוי שבחרתם הוא לא פקודה קיימת,</li>
+  <li>הכינוי יהיה קליט וזכור לכם.</li>
+</ul>
+
+<p>או אם אני זקוק לערוך את הקובץ בתדירות גבוהה - אכתוב כינוי שיפתח אותו בעורך הטקסט <code class="language-plaintext highlighter-rouge">nano</code> :</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">nf</span><span class="o">=</span><span class="s1">'nano ~/file'</span>
+</code></pre></div></div>
+
+<p>שוב פעם <strong>אדגיש</strong>: <em>יש לכתוב את הנתיב המוחלט של הקובץ, על מנת שבכל מקום שבו תעמדו תוכלו להריץ את הכינוי.</em></p>
+
+<h3 id="כינוי-אחד-עבור-שני-פקודות">כינוי אחד עבור שני פקודות</h3>
+<p>ישנם פקודות אשר הולכות בזוגות, למשל: <code class="language-plaintext highlighter-rouge">sudo apt update</code> <code class="language-plaintext highlighter-rouge">sudo apt upgrade</code> . היה נחמד אם היינו יכולים לקצר אותם לפקודה אחת… אז בעזרת כינוי נוכל להרגיש ש”כתבנו פקודה חדשה ללינוקס” 🤓.</p>
+
+<p>אז בדוגמה של עדכון חבילות נוכל להשתמש באופרטור <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> על מנת ליצור שרשרת פקודות עם הכינוי <code class="language-plaintext highlighter-rouge">updg</code> (קיצור של update - upgrade):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">updg</span><span class="o">=</span><span class="s1">'sudo apt update &amp;&amp; sudo apt upgrade'</span>
+</code></pre></div></div>
+
+<p>כעת נוכל להריץ את הפקודה <code class="language-plaintext highlighter-rouge">updg</code> וללכת להכין קפה ☕ בתקווה שהעדכונים ייקחו הרבה זמן…</p>
+
+<h3 id="כינוי-לסקריפט">כינוי לסקריפט</h3>
+<p>יש לי סקריפט שאני מפעיל בכל יום על מנת לבצע משימות שגרתיות מעצבנות. אבל עדיין אני נאלץ לכתוב את הנתיב המלא של הסקריפט או לעבור אל הספרייה שבה מאוחסן הסקריפט. וזה די מאבד את הטעם של סקריפט, כי אם אתה עדיין נאלץ “ללכלך את הידיים” אז בשביל מה כתבת סקריפט? אז נוכל לכתוב את הנתיב המלא לסקריפט בכינוי.</p>
+
+<p>לדוגמה, הסקריפט שלי נמצא בספריית <code class="language-plaintext highlighter-rouge">Scripts/my_script.sh/~</code> אוכל לכתוב אותו אל כינוי בצורה הזאת:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">runs</span><span class="o">=</span><span class="s1">'~/Scripts/my_script.sh'</span>
+</code></pre></div></div>
+
+<p>כעת בכל זמן, ובכל ספרייה שאעבוד בה אוכל להפעיל את הסקריפט באמצעות הפקודה <code class="language-plaintext highlighter-rouge">runs</code>. זה סופר שימושי, אני משתמש בזה מדי יום.</p>
+
+<h3 id="כינוי-לכינויים">כינוי לכינויים</h3>
+<p>כן! ניתן לעשות כינוי לכינוי. במקרה ויש לנו שני משימות יומיומיות שיצרנו להם כינוי לכל אחד, למשל אם יש לנו כינוי לקריאת לוג של עדכונים, ועוד כינוי של הרצת שדרוגים. כי לפעמים אני רוצה רק לקרוא את הלוגים ולפעמים רק להריץ. אנו יכולים לאחד את שניהם לכינוי אחד כך שהלוגים ייקראו ומיד לאחר מכן העדכונים יותקנו.</p>
+
+<p>האופן שכותבים כינוי לכינויים דומה לכתיבת כינוי רגיל:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">crup</span><span class="o">=</span><span class="s1">'cupd &amp;&amp; upg'</span>
+</code></pre></div></div>
+
+<p>כאשר הכינוי <code class="language-plaintext highlighter-rouge">cupd</code> הוא לפקודה <code class="language-plaintext highlighter-rouge">cat</code> לקריאת העדכונים, והכינוי <code class="language-plaintext highlighter-rouge">upg</code> זה הפקודה <code class="language-plaintext highlighter-rouge">upgrade</code>, והכינוי לכינוי הוא קיצור של <code class="language-plaintext highlighter-rouge">cat run update upgrade</code>.</p>
+
+<h2 id="לסיכום">לסיכום</h2>
+<p>כינויי פקודות הן כלי מושלם לקסטם את הפקודות ושגרת העבודה בלינוקס. החל מקיצור של פקודות ארוכות, כינויים לפקודות פשוטות, שני פקודות בכינוי אחד, ‘פקודה’ עבור הרצת סקריפט, ואפילו כינויים לכינויים.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[פקודות לא חייבות להיות ארוכות! בשגרת העבודה יש לנו מספר פקודות שיוצא לנו להקליד אותן כמעט כל יום, ולפעמים כמה פעמים ביום. היה נחמד אילו יכולנו לקצר את הפקודות, או אפילו לחסוך כמה 🤏🏻. למטרה זו - ועוד כמה - ישנה את התוכנה הנפלאה alias , כינויים לפקודות.]]></summary></entry><entry><title type="html">אוף, עדכונים…</title><link href="http://localhost:4000/2024/07/09/%D7%90%D7%95%D7%A3-%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99%D7%9D.html" rel="alternate" type="text/html" title="אוף, עדכונים…" /><published>2024-07-09T00:00:00+03:00</published><updated>2024-07-09T00:00:00+03:00</updated><id>http://localhost:4000/2024/07/09/%D7%90%D7%95%D7%A3-%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99%D7%9D</id><content type="html" xml:base="http://localhost:4000/2024/07/09/%D7%90%D7%95%D7%A3-%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99%D7%9D.html"><![CDATA[<h1 id="כיצד-לשמור-על-המערכת-שלנו-מעודכנת">כיצד לשמור על המערכת שלנו מעודכנת</h1>
+<p>הדבר החשוב בניהול מערכות ממוחשבות הוא תחזוקה. בין שלל משימות התחזוקה נמצאת גם משימת עדכון התוכנה. בפוסט זה אכתוב כיצד להקל במשימה זו, שאיך לומר בעדינות, להרבה אין סבלנות אליה.</p>
+
+<p>בפוסט אשתף בדרך שאני פועל על מנת לבצע עדכונים שוטפים בכל יום. אני משתמש בשני כלים: סקריפט, ומשימה מתוזמנת שמריצה את הסקריפט לבדיקת עדכונים. ולאחר מכן עדכון החבילות בפועל באופן ידני.</p>
+
+<h2 id="כתיבת-סקריפט">כתיבת סקריפט</h2>
+<p>כצעד ראשון נכתוב סקריפט פשוט שמטרתו לבצע את בדיקת עדכונים ולכתוב אותם לקובץ עם חתימת תאריך בשמו.</p>
+
+<p><em>להלן הסקריפט למערכות פדורה:</em></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+dnf check-update <span class="o">&gt;</span> /home/nachmen/Desktop/dnf-update-logs/<span class="s2">"</span><span class="si">$(</span><span class="nb">date</span> +<span class="s1">'%d-%m-%y'</span><span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>אפרק לגורמים את הפקודה:</p>
+
+<ol>
+  <li>הפקודה הראשונה היא בדיקת העדכונים, <code class="language-plaintext highlighter-rouge">dnf check-update</code> .</li>
+  <li>פלט הפקודה ייכתב לקובץ חדש במיקום <code class="language-plaintext highlighter-rouge">/home/nachmen/Desktop/dnf-update-logs/</code> .</li>
+  <li>שם הקובץ יקבל את תאריך הביצוע, שהוא ביטוי של המשתנה <code class="language-plaintext highlighter-rouge">"$(date +'%d-%m-%y')"</code> .</li>
+</ol>
+
+<p>ניתן לסקריפט הרשאות ריצה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x dnf_updates.sh
+</code></pre></div></div>
+
+<p>ונשמור אותו במקום <strong>קבוע</strong> במחשב. אני למשל שומר את כל הסקריפטים שלי בתיקיית <code class="language-plaintext highlighter-rouge">Scripts</code> בתיקיית הבית שלי. הסיבה שמיקום הסקריפט חייב להיות קבוע משום שבצעד הבא בתהליך - קביעת משימה מתוזמנת - נצטרך לתת מיקום של הסקריפט לביצוע.</p>
+
+<h2 id="כתיבת-משימה-מתוזמנת">כתיבת משימה מתוזמנת</h2>
+<p>כעת ניצור משימה מתוזמנת שתרוץ בכל יום בשעה קבועה. <strong>שימו לב</strong>: אם מדובר במחשב אישי אז סביר להניח שישנם שעות שהמחשב כבוי, או לחילופין אינו מחובר לאינטרנט. אין טעם להריץ משימה בזמן כזה. על כן יש לבחור שעה ביום שבדרך כלל המחשב פועל והוא גם מחובר לאינטרנט.</p>
+
+<p>היות והפקודה <code class="language-plaintext highlighter-rouge">dnf check-update</code> איננה דורשת הרשאות גבוהות, ניתן להריץ אותה גם כמשתמש רגיל, ולכן גם התהליך שיפעיל את הפקודה אינו צריך להיות עם הרשאות גבוהות.</p>
+
+<p>נקליד בטרמינל את הפקודה הבאה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab <span class="nt">-e</span>
+</code></pre></div></div>
+
+<p>תוכנת <code class="language-plaintext highlighter-rouge">crontab</code> מנהלת את המשימות המתזמנות של המערכת, והפרמטר <code class="language-plaintext highlighter-rouge">e-</code> מציין edit - עריכת המשימות.</p>
+
+<p>יפתח בפנינו עורך הטקסט <code class="language-plaintext highlighter-rouge">nano</code> , ואם זו הפעם הראשונה שבה אנו יוצרים משימה מתוזמנת - הקובץ יהיה ריק.</p>
+
+<p>נחליט שאנו רוצים להריץ בדיקת עדכונים בכל יום בשעה 11:45 לפני הצהריים, נוסיף שורה זו בקובץ:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>45 11 <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /home/nachmen/Scripts/dnf-updates.sh
+</code></pre></div></div>
+
+<p>להסביר את הצופן הזה, נקרא את הקובץ <code class="language-plaintext highlighter-rouge">etc/crontab/</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+</code></pre></div></div>
+
+<p>למעשה קובץ זה מסביר את מבנה והתחביר של השורה בקובץ <code class="language-plaintext highlighter-rouge">crontab</code> , ובעצם הפקודה מחולקת לשלושה חלקים: זמן הביצוע, המשתמש שיבצע, והפקודה שתבוצע.</p>
+
+<p><strong>הביטוי של זמן הביצוע הוא באופן הבא:</strong></p>
+
+<ul>
+  <li>הכוכבית הראשונה משמאל מציינת את הדקה בשעה - בין 0 ל- 59.</li>
+  <li>הכוכבית השנייה מציינת את השעה ביום - בין 0 ל- 23.</li>
+  <li>הכוכבית השלישית מציינת יום <strong>בחודש</strong> - בין 1 ל- 31.</li>
+  <li>הכוכבית הרביעית מציינת את החודש בשנה - בין 1 ל- 12.</li>
+  <li>הכוכבית החמישית מציינת את היום <strong>בשבוע</strong> - בין 0 ל- 6 כאשר 0 הוא יום ראשון, או כתיבת שם היום.</li>
+</ul>
+
+<p>במקרה שלנו, אנו כתבנו בכוכבית השנייה 11, ובכוכבית הראשונה 45. המשמעות: בשעה 11, ודקה 45. ומכיוון שלא ציינו את היום בחודש, החודש, והיום בשבוע - המשימה תרוץ בכל יום ויום.</p>
+
+<p>כדי לסמלץ את הנושא ניתן להיעזר באתר <a href="https://crontab.guru/">crontab.guru</a> בו ניתן “לקבוע זמן” לביצוע המשימה, ולקבל פידבק מתי זה יקרה. הנה תמונה של האתר:</p>
+
+<p><img src="/assets/Crontab.guru.png" alt="Crontab.guru" /></p>
+
+<p>בשורה באמצע כותבים את התאריך והשעה, ומיד מופיע מתי תהיה הפעם הבאה שהמשימה תרוץ.</p>
+
+<p>כעת, נכתוב את הנתיב והמיקום המדויק של הסקריפט שבודק עדכונים,  במקרה שלנו הוא <code class="language-plaintext highlighter-rouge">/home/nachmen/Scripts/dnf-updates.sh</code> , ונשמור את הקובץ (ctrl + o, enter) ונצא מעורך הטקסט (ctrl + x).</p>
+
+<p>במקרה שלנו אין חובה לציין את המשתמש שיריץ את המשימה.</p>
+
+<p>לוודא שהמשימה אכן נכתבה ונשמרה נקליד את הפקודה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab <span class="nt">-l</span>
+</code></pre></div></div>
+
+<p>כאשר הפרמטר <code class="language-plaintext highlighter-rouge">l-</code> מציין את רשימת המשימות. במקרה שלנו היות וזו היא המשימה הראשונה שכתבנו - תופיע שורה יחידה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>45 11 <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /home/nachmen/Scripts/dnf-update.sh
+</code></pre></div></div>
+
+<p>כעת מה שנשאר זה כל יום לקרוא את רשימת העדכונים אשר נכתבו בקובץ העדכונים היומי, ולהריץ את הפקודה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf upgrade
+</code></pre></div></div>
+
+<h1 id="בהצלחה">בהצלחה!</h1>]]></content><author><name></name></author><summary type="html"><![CDATA[כיצד לשמור על המערכת שלנו מעודכנת הדבר החשוב בניהול מערכות ממוחשבות הוא תחזוקה. בין שלל משימות התחזוקה נמצאת גם משימת עדכון התוכנה. בפוסט זה אכתוב כיצד להקל במשימה זו, שאיך לומר בעדינות, להרבה אין סבלנות אליה.]]></summary></entry><entry><title type="html">שדרוג הטרמינל חלק שני - oh my zsh</title><link href="http://localhost:4000/2024/07/05/%D7%A9%D7%93%D7%A8%D7%95%D7%92-%D7%94%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C-%D7%97%D7%9C%D7%A7-%D7%A9%D7%A0%D7%99-oh-my-zsh.html" rel="alternate" type="text/html" title="שדרוג הטרמינל חלק שני - oh my zsh" /><published>2024-07-05T00:00:00+03:00</published><updated>2024-07-05T00:00:00+03:00</updated><id>http://localhost:4000/2024/07/05/%D7%A9%D7%93%D7%A8%D7%95%D7%92-%D7%94%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C-%D7%97%D7%9C%D7%A7%20%D7%A9%D7%A0%D7%99:-oh-my-zsh</id><content type="html" xml:base="http://localhost:4000/2024/07/05/%D7%A9%D7%93%D7%A8%D7%95%D7%92-%D7%94%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C-%D7%97%D7%9C%D7%A7-%D7%A9%D7%A0%D7%99-oh-my-zsh.html"><![CDATA[<h1 id="מה-זה-oh-my-zsh">מה זה oh my zsh?</h1>
+<p>השפה הדיפולטיבית ברוב הפצות לינוקס היא <code class="language-plaintext highlighter-rouge">bash</code>. ישנם עוד שפות שמותקנות מראש בהפצות לינוקס סטנדרטיות. חלקן ישנות, וחלקן ישנות יותר. בפוסט זה נכיר שפה חדשה למעטפת של לינוקס. היא נקראת <code class="language-plaintext highlighter-rouge">zsh</code> (תוכלו לקרוא עליה <a href="https://zsh.org">כאן</a>). אך לא לשם התקנת עוד שפת מעטפת התכנסנו. העוצמה של <code class="language-plaintext highlighter-rouge">zsh</code> (נהגה: זי של) היא בהתקנת <code class="language-plaintext highlighter-rouge">ohmyzsh</code> <a href="https://ohmyz.sh/">פרויקט בקוד פתוח</a> שמעניק גישה להמון תוספים, כלים, וערכות נושא עבור הטרמינל. אז בפוסט הנוכחי אכתוב את ההתחלה של עבודה עם <code class="language-plaintext highlighter-rouge">ohmyzsh</code>.</p>
+
+<h2 id="הבסיס-zsh">הבסיס: <code class="language-plaintext highlighter-rouge">zsh</code></h2>
+<p>שלב ראשון הוא התקנת מעטפת <code class="language-plaintext highlighter-rouge">zsh</code>. נפתח את הטרמינל ונקליד את הפקודה הבאה:</p>
+
+<p><em>בדביאן, אובונטו ונגזרותיה:</em></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>zsh
+</code></pre></div></div>
+
+<p><em>בפדורה:</em></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install </span>zsh
+</code></pre></div></div>
+
+<p>בגמר ההתקנה נאמת את ההתקנה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zsh <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>אמור להיות משהו דומה לזה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zsh 5.9 <span class="o">(</span>x86_64-redhat-linux-gnu<span class="o">)</span>
+</code></pre></div></div>
+
+<p>כעת יש להגדיר את <code class="language-plaintext highlighter-rouge">zsh</code> כברירת מחדל עבורך:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chsh <span class="nt">-s</span> <span class="si">$(</span>which zsh<span class="si">)</span>
+</code></pre></div></div>
+
+<p>הקלידו את ססמתכם, ותקבלו הודעה <code class="language-plaintext highlighter-rouge">Shell changed</code>. כדי שהשינויים ייכנסו לתוקף - צאו מחשבונכם וכנסו בחזרה. פתחו את הטרמינל, תקבלו הודעה מהשל החדש, התעלמו והקלידו אנטר.</p>
+
+<h2 id="הקצפת-ohmyzsh">הקצפת: <code class="language-plaintext highlighter-rouge">ohmyzsh</code></h2>
+<p>שלב שני - התקנת <code class="language-plaintext highlighter-rouge">ho my zsh</code>:</p>
+
+<p>הקלידו את הפקודה הבאה בטרמינל:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sb">`</span>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="si">)</span><span class="s2">"</span><span class="sb">`</span>
+</code></pre></div></div>
+
+<p>בגמר ההתקנה תקבלו הודעה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         __                                     __   
+  ____  / /_     ____ ___  __  __   ____  _____/ /_  
+ / __ <span class="se">\/</span> __ <span class="se">\ </span>  / __ <span class="sb">`</span>__ <span class="se">\/</span> / / /  /_  / / ___/ __ <span class="se">\ </span>
+/ /_/ / / / /  / / / / / / /_/ /    / /_<span class="o">(</span>__  <span class="o">)</span> / / / 
+<span class="se">\_</span>___/_/ /_/  /_/ /_/ /_/<span class="se">\_</span>_, /    /___/____/_/ /_/  
+                        /____/                       ....is now installed!
+</code></pre></div></div>
+
+<p>צאו מהטרמינל (הקלידו <code class="language-plaintext highlighter-rouge">exit</code>) ופתחו אותו שוב, וכך הוא ייראה:</p>
+
+<p><img src="/assets/ohmyzsh.png" alt="ohmyzsh" /></p>
+
+<p>כך ייראה זרימת העבודה בטרמינל ה”חדש”:</p>
+
+<p><img src="/assets/Ohmyzsh-workflow.png" alt="Ohmyzsh-workflow" /></p>
+
+<p>קצת הסבר על החידושים:</p>
+
+<ol>
+  <li>החץ הירוק מופיע בתחילת שורה. אם החץ הוא ירוק - הפקודה הקודמת הושלמה בהצלחה, חץ אדום - הפקודה הקודמת נכשלה.</li>
+  <li>לאחר החץ מופיע שם התיקייה שבה אני עומד. כשנפתח את הטרמינל נעמוד בתיקיית הבית <code class="language-plaintext highlighter-rouge">~</code>.</li>
+  <li>בתמונה אני עובר לתיקיית גיט, ומופיעה הודעה <code class="language-plaintext highlighter-rouge">git:(main)</code> דהיינו תיקייה זו היא חלק מפרויקט בגיט, ובסוגריים כתוב את הבראנץ’ שאנו עובדים עליו.</li>
+  <li>במקרה ונעשו שינויים בגיט שלא נשמרו - יופיע איקס.</li>
+  <li>כתבתי <code class="language-plaintext highlighter-rouge">git status</code> כדי לראות את השינוייים שנעשו.</li>
+  <li>אם נרצה לראות את המיקום המלא שלנו - נקליד <code class="language-plaintext highlighter-rouge">pwd</code>.</li>
+</ol>
+
+<p>תוכלו להתקין עוד ערכות נושא עבור <code class="language-plaintext highlighter-rouge">ohmyzsh</code>, וכמובן תוספים שיקלו על העבודה בטרמינל. בפוסטים הבאים אכתוב בעז”ה על ערכות נושא ותוספים ב-<code class="language-plaintext highlighter-rouge">ohmyzsh</code></p>]]></content><author><name></name></author><summary type="html"><![CDATA[מה זה oh my zsh? השפה הדיפולטיבית ברוב הפצות לינוקס היא bash. ישנם עוד שפות שמותקנות מראש בהפצות לינוקס סטנדרטיות. חלקן ישנות, וחלקן ישנות יותר. בפוסט זה נכיר שפה חדשה למעטפת של לינוקס. היא נקראת zsh (תוכלו לקרוא עליה כאן). אך לא לשם התקנת עוד שפת מעטפת התכנסנו. העוצמה של zsh (נהגה: זי של) היא בהתקנת ohmyzsh פרויקט בקוד פתוח שמעניק גישה להמון תוספים, כלים, וערכות נושא עבור הטרמינל. אז בפוסט הנוכחי אכתוב את ההתחלה של עבודה עם ohmyzsh.]]></summary></entry><entry><title type="html">שני כלים שימושיים לטרמינל</title><link href="http://localhost:4000/2024/07/03/%D7%A9%D7%A0%D7%99-%D7%9B%D7%9C%D7%99%D7%9D-%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99%D7%99%D7%9D-%D7%9C%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C.html" rel="alternate" type="text/html" title="שני כלים שימושיים לטרמינל" /><published>2024-07-03T00:00:00+03:00</published><updated>2024-07-03T00:00:00+03:00</updated><id>http://localhost:4000/2024/07/03/%D7%A9%D7%A0%D7%99-%D7%9B%D7%9C%D7%99%D7%9D-%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99%D7%99%D7%9D-%D7%9C%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C</id><content type="html" xml:base="http://localhost:4000/2024/07/03/%D7%A9%D7%A0%D7%99-%D7%9B%D7%9C%D7%99%D7%9D-%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99%D7%99%D7%9D-%D7%9C%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C.html"><![CDATA[<p>שני תוכנות שמקלות על עריכת קבצים בטרמינל, ועל קריאת קבצים בטרמינל.</p>
+
+<h1 id="קריאת-קבצים---bat">קריאת קבצים - <code class="language-plaintext highlighter-rouge">bat</code></h1>
+<p>במקום לקרוא קבצים בצורה כזאת, דהיינו עם קורא הקבצית המסורתי <code class="language-plaintext highlighter-rouge">cat</code>:</p>
+
+<p><img src="/assets/cat.png" alt="cat" /></p>
+
+<p>ניתן לקרוא קבצים כך, עם קורא קבצים מעניין ומגניב במיוחד:</p>
+
+<p><img src="/assets/bat.png" alt="bat" /></p>
+
+<p>דהיינו:</p>
+
+<ul>
+  <li>מספרי שורות,</li>
+  <li>הדגשת תחביר,</li>
+  <li>שם הקובץ בכותרת.</li>
+</ul>
+
+<h1 id="עריכת-קבצים---micro">עריכת קבצים - <code class="language-plaintext highlighter-rouge">micro</code></h1>
+<p>במקום לערוך קבצים בעורך <code class="language-plaintext highlighter-rouge">nano</code> - שנראה כך:</p>
+
+<p><img src="/assets/nano.png" alt="nano" /></p>
+
+<p>ניתן לערוך קבצים כך, באמצעות עורך הטקסט <code class="language-plaintext highlighter-rouge">micro</code>:</p>
+
+<p><img src="/assets/micro.png" alt="micro" /></p>
+
+<p>דהיינו:</p>
+
+<ul>
+  <li>מספרי שורות,</li>
+  <li>ניווט באמצעות הסמן,</li>
+  <li>שמירת קובץ: <code class="language-plaintext highlighter-rouge">ctrl + s</code>,</li>
+  <li>יציאה מקובץ: <code class="language-plaintext highlighter-rouge">ctrl + q</code>,</li>
+  <li>ביטול פעולה אחרונה: <code class="language-plaintext highlighter-rouge">ctrl + z</code>,</li>
+  <li>שחזור פעולה אחרונה: <code class="language-plaintext highlighter-rouge">ctrl + y</code>,</li>
+  <li>בחירת שורות או מילים באמצעות הסמן.</li>
+</ul>
+
+<h1 id="התקנת-bat">התקנת <code class="language-plaintext highlighter-rouge">bat</code></h1>
+<p>הפצות מבוססות דביאן ואובנטו:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>bat
+</code></pre></div></div>
+
+<p>הפצות מבוססות רד-האט, פדורה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install </span>bat
+</code></pre></div></div>
+
+<p>מעתה, כדי לקרוא קובץ - הקלידו <code class="language-plaintext highlighter-rouge">bat</code> במקום <code class="language-plaintext highlighter-rouge">cat</code>!</p>
+
+<h1 id="התקנת-micro">התקנת <code class="language-plaintext highlighter-rouge">micro</code></h1>
+<p>הפצות מבוססות דביאן ואובנטו:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>micro
+</code></pre></div></div>
+
+<p>הפצות מבוססות רד-האט, פדורה:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install </span>micro
+</code></pre></div></div>
+
+<p>מעתה, כדי לערוך קובץ - הקלידו <code class="language-plaintext highlighter-rouge">micro</code> במקום <code class="language-plaintext highlighter-rouge">nano</code>!</p>
+
+<h2 id="מקורות">מקורות:</h2>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/sharkdp/bat">bat</a></p>
+  </li>
+  <li>
+    <p><a href="https://micro-editor.github.io">micro editor</a></p>
+  </li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[שני תוכנות שמקלות על עריכת קבצים בטרמינל, ועל קריאת קבצים בטרמינל.]]></summary></entry><entry><title type="html">שידרוג הטרמינל, חלק ראשון - התוכנה</title><link href="http://localhost:4000/2024/06/23/%D7%A9%D7%99%D7%93%D7%A8%D7%95%D7%92-%D7%94%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C,-%D7%97%D7%9C%D7%A7-%D7%A8%D7%90%D7%A9%D7%95%D7%9F-%D7%94%D7%AA%D7%95%D7%9B%D7%A0%D7%94.html" rel="alternate" type="text/html" title="שידרוג הטרמינל, חלק ראשון - התוכנה" /><published>2024-06-23T00:00:00+03:00</published><updated>2024-06-23T00:00:00+03:00</updated><id>http://localhost:4000/2024/06/23/%D7%A9%D7%99%D7%93%D7%A8%D7%95%D7%92-%D7%94%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C,-%D7%97%D7%9C%D7%A7-%D7%A8%D7%90%D7%A9%D7%95%D7%9F:-%D7%94%D7%AA%D7%95%D7%9B%D7%A0%D7%94</id><content type="html" xml:base="http://localhost:4000/2024/06/23/%D7%A9%D7%99%D7%93%D7%A8%D7%95%D7%92-%D7%94%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%9C,-%D7%97%D7%9C%D7%A7-%D7%A8%D7%90%D7%A9%D7%95%D7%9F-%D7%94%D7%AA%D7%95%D7%9B%D7%A0%D7%94.html"><![CDATA[<h1 id="כיצד-ליצור-סביבת-עבודה-נוחה-ופרודוקטיבית-בטרמינל">כיצד ליצור סביבת עבודה נוחה ופרודוקטיבית בטרמינל</h1>
+<p>כאנשי לינוקס, אנו עובדים חלק ניכר מהזמן בטרמינל, “מלכלכים את הידיים” מה שנקרא. מגיע לנו טרמינל יפה, מזמין ונוח לעבוד! אז החלטתי לשתף באופן שבו בחרתי להכין את סביבת העבודה שלי בטרמינל. אולי זה יראה קצת יותר מדי מסובך, ויהיו שישאלו “האם המאמץ שווה? זה יותר יעזור לי? הרי במילא <strong>אין גרפי</strong> בלינוקס?”</p>
+
+<p>אז התשובה: בהחלט! ניתן לשפר את הטרמינל באמצעות כמה צעדים וליהנות ממראה אלגנטי, השלמות קוד, קריאת קבצים באופן מדהים, לערוך קבצים בדיוק כמו שאתם רגילים לעורך טקסט גרפי, ועוד ה-מ-ו-ן אופציות. אז נתחיל.</p>
+
+<h2 id="התוכנה-של-הטרמינל">התוכנה של הטרמינל</h2>
+<p>התוכנה של הטרמינל היא תוכנה שעימה אנו מבצעים אינטגרציה עם עם ה-<code class="language-plaintext highlighter-rouge">shell</code>.  ניתן להשתמש בכמה תוכנות כאלו, ישנם יותר פשוטים וישנם יותר “משוכללים”. נלמד כיצד לבצע שינויים והתאמות בטרמינל ברירת המחדל, ו/או להתקין תוכנות אחרות לטרמינל.</p>
+
+<h3 id="גנום-טרמינל---gnome-terminal">גנום טרמינל - <code class="language-plaintext highlighter-rouge">gnome-terminal</code></h3>
+<p>תוכנת הטרמינל (בהפצות עם מעטפת גנום) נקראת <code class="language-plaintext highlighter-rouge">gnome-terminal</code> וזוהי התוכנה ברירת המחדל. נלמד כיצד ליצור פרופילים עבור מטרות שונות, החל מעיצוב וצבעים וכלה בפקודות מותאמות לכל פרופיל.</p>
+
+<p>כשתפתחו את הטרמינל בפס הכותרת בצד ימין (או שמאל, בעברית) תראו תפריט נפתח (אייקון של “המבורגר”), ובתפריט &gt; העדפות יפתח לכם חלונית של הגדרות. להלן שלושה דברים שתוכלו לעשות ולשדרג את מראה הטרמינל שלכם.</p>
+
+<h4 id="פרופילים">פרופילים</h4>
+<p>תוכלו ליצור פרופיל חדש בהעדפות &gt; פרופילים &gt; +.  הוסיפו פרופיל ותנו לו שם. יתווסף לכם פרופיל חדש. העדיפו ליצור שינויים בפרופיל חדש ולא בפרופיל שמגיע כברירת מחדל. כך שתדעו תמיד מה היו ההגדרות ברירת המחדל.</p>
+
+<p>לאחר יצירת הפרופיל תוכלו להגדירו כברירת מחדל, שימו לב שיש חץ קטן בכל פרופיל בזמן שאתם לוחצים עליו. בתפריט הנפתח בחרו “הגדרה כברירת מחדל”.</p>
+
+<p>המעלה של פרופילים הוא שיש הגדרות שונות שתרצה להפעיל במופע מסוים של הטרמינל אבל לא בכל פעם כברירת מחדל. תוכלו לעבור בכל זמן בין הפרורפילים בשני דרכים: או בכותרת הטרמינל בחץ הקטן שעל יד כפתור הפלוס, או דרך תפריט ההמבורגר &gt; פרופיל.</p>
+
+<h4 id="פונטים">פונטים</h4>
+<p>הדבר הראשון שאני עושה בטרמינל הוא להגדיר פונטים. אני ממליץ על פונט <code class="language-plaintext highlighter-rouge">JetBrains</code>שניתן להוריד בחינם <a href="https://www.jetbrains.com/lp/mono/">מהאתר של מפתחי PyCharm</a>. התקנת פונטים בלינוקס היא קלי קלות: לאחר הורדת התיקייה של הפונטים, חלצו את התיקייה, והעתיקו אותה (כמות שהיא) אל המיקום הבא:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.local/share/fonts
+</code></pre></div></div>
+
+<blockquote>
+  <p>אם לא קיימת תיקיית <code class="language-plaintext highlighter-rouge">fonts</code> - צרו אותה.</p>
+</blockquote>
+
+<p>לאחר שהעתקתם את תיקיית הפונטים תוכלו לראות שנוספו לכם ברשימת הפונטים גם את משפחת <code class="language-plaintext highlighter-rouge">JetBrains mono</code>.</p>
+
+<p>הגדירו את הפונט בהתאם לגודל המסך שיש לכם. אם המסך הוא בינוני ומעלה - תוכלו להרשות לעצמכם פונט גודל 15. זה ייראה טוב.</p>
+
+<h4 id="צבעי-רקע">צבעי רקע</h4>
+<p>צבע הרקע באובונטו הוא בורדו, ובפדורה הוא שחור. תוכלו לבחור מתוך רשימה של ערכות נושא בהעדפות &gt; פרופיל &gt; צבעים &gt; תבניות מובנות. בטלו את הסימון בתיבה של “שימוש בצבעי ערכת הנושא של המערכת”, ובחרו את ערכת הנושא האהובה עליכם לפרופיל החדש שיצרתם.</p>
+
+<h3 id="בלאק-בוקס---blackbox-terminal">בלאק בוקס - <code class="language-plaintext highlighter-rouge">blackbox-terminal</code></h3>
+<p>כמו שהזכרתי, ישנם עוד תוכנות לטרמינל. אחת מהתוכנות הללו, היא ממש תוכנה מיוחדת שנקראת <code class="language-plaintext highlighter-rouge">blackbox-terminal</code>. המפתחים מגדירים אותה כ-“elegant and customizable terminal for GNOME” - מסוף אלגנטי וניתן להתאמה אישית עבור GNOME.</p>
+
+<p>מה שיפה בטרמינל הזה הוא הפשטות, והעיצוב הנקי והנאה. אין בו הרבה פיצ’רים, אין בו המון אפשרויות - יש בו טרמינל לכתיבת פקודות וסקריפטים ללא הפרעות ומקסימום ריכוז. ממש כיף לעבוד איתו. יש בו גם פיצ’ר קטן ושימושי של העתק הדבר עם קיצורי המקשים ctrl+c ctrl+v. כמובן שיש בו את האפשרויות הבסיסיות של לשוניות, בחירת רקע וגופנים, פקודות מותאמות, ועוד. אם תרצו לנסות את הטרמינל הזה, אז פשוט הקלידו את הפקודה הבאה:</p>
+
+<p><em>באובונטו:</em></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>blackbox-terminal
+</code></pre></div></div>
+
+<p><em>בפדורה:</em></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install </span>blackbox-terminal
+</code></pre></div></div>
+
+<p>לאחר ההתקנה תוכלו להגדיר את הערכת נושא ועוד התאמות בתפריט ההמבורגר &gt; <code class="language-plaintext highlighter-rouge">Preferences</code>, כדלהלן.</p>
+
+<h4 id="לשונית-general">לשונית <code class="language-plaintext highlighter-rouge">General</code></h4>
+<p>בלשונית <code class="language-plaintext highlighter-rouge">General</code> תוכלו להגדיר מספר הגדרות כלליות, למשל:</p>
+
+<ol>
+  <li>האם לשחזר את גודל החלון,</li>
+  <li>האם להציג את כותרת החלון תמיד,</li>
+  <li>הצגת כפתור התפריט.</li>
+</ol>
+
+<h4 id="לשונית-terminal">לשונית <code class="language-plaintext highlighter-rouge">Terminal</code></h4>
+
+<p>בלשונית זו תוכלו להגדיר את מראה הטרמינל, למשל:</p>
+
+<ol>
+  <li>פונט וגודל,</li>
+  <li>קו הסמן,</li>
+  <li>פס גלילה,</li>
+  <li>ערכת נושא.</li>
+</ol>
+
+<h3 id="טיליקס---tilix">טיליקס - <code class="language-plaintext highlighter-rouge">tilix</code></h3>
+<p>טיליקס הינו טרמינל מיוחד ביכולתו לחלק את החלונית לכמה טרמינלים, מה שנקרא “לרצף”. ניתן לחלק את החלונית לאורך, לרוחב, ועוד פעם לאורך ועוד פעם לרוחב. גם ניתן לפתוח עוד מופעים כמו עוד חלונות - רק שזה בחלונית אחת וניתן לנווט ביניהם בקלות.</p>
+
+<p><em>כדי להתקין את טיליקס בפדורה הקלידו את הפקודה הבאה:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install </span>tilix
+</code></pre></div></div>
+
+<p><em>וכדי להתקין את טיליקס באובונטו ונגזרותיה - עדכנו רק את מנהל החבילות מ-<code class="language-plaintext highlighter-rouge">dnf</code> ל-<code class="language-plaintext highlighter-rouge">apt</code>:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>tilix
+</code></pre></div></div>
+
+<h4 id="פיצרים-ב-tilix">פיצ’רים ב-<code class="language-plaintext highlighter-rouge">tilix</code></h4>
+<p>ישנם ב-<code class="language-plaintext highlighter-rouge">tilix</code> פיצ’רים שיש כמו ב-<code class="language-plaintext highlighter-rouge">gnome-terminal</code>, כך שההגדרות הן די דומות, להוסיף את ההגדרות המיוחדות של טיליקס. בין ההגדרות שהזכרנו לעיל ישנם בטיליקס גם:</p>
+
+<ul>
+  <li>פרופילים,</li>
+  <li>פונטים,</li>
+  <li>ערכות נושא,</li>
+  <li>ועוד הגדרות הקשורות לריצוף החלוניות.</li>
+</ul>
+
+<h1 id="לסיכום">לסיכום</h1>
+<p>סקרנו שלושה כלים לעבודה בטרמינל: <code class="language-plaintext highlighter-rouge">gnome-terminal</code>, שזה תוכנת הטרמינל שמגיעה כברירת המחדל בהפצות עם מעטפת <code class="language-plaintext highlighter-rouge">gnome</code>. הכלי השני הוא <code class="language-plaintext highlighter-rouge">blackbox-terminal</code> - המסוף הפשוט והאלגנטי ביותר, והאחרון - תוכנת <code class="language-plaintext highlighter-rouge">tilix</code>, שנועדה לסייע בעבודה עם מספר רב של מופעי טרמינל פתוחים בעת ובעונה אחת.</p>
+
+<h2 id="בפוסט-הבא">בפוסט הבא</h2>
+<p>נכתוב על השפות השונות שאנו עובדים עימן בטרמינל, הוספת תכונות ופיצ’רים מגניבים ממש, ערכות נושא - ועוד.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[כיצד ליצור סביבת עבודה נוחה ופרודוקטיבית בטרמינל כאנשי לינוקס, אנו עובדים חלק ניכר מהזמן בטרמינל, “מלכלכים את הידיים” מה שנקרא. מגיע לנו טרמינל יפה, מזמין ונוח לעבוד! אז החלטתי לשתף באופן שבו בחרתי להכין את סביבת העבודה שלי בטרמינל. אולי זה יראה קצת יותר מדי מסובך, ויהיו שישאלו “האם המאמץ שווה? זה יותר יעזור לי? הרי במילא אין גרפי בלינוקס?”]]></summary></entry><entry><title type="html">Fedora vs. Ubuntu</title><link href="http://localhost:4000/2024/06/18/Fedora-vs.-Ubuntu.html" rel="alternate" type="text/html" title="Fedora vs. Ubuntu" /><published>2024-06-18T00:00:00+03:00</published><updated>2024-06-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/06/18/Fedora-vs.-Ubuntu</id><content type="html" xml:base="http://localhost:4000/2024/06/18/Fedora-vs.-Ubuntu.html"><![CDATA[<p>אם לא הבנתם את כותרת הפוסט, אז אסביר: ישנם שני הפצות לינוקס פופלאריות, ושניהן תומכות בעברית בצורה נפלאה, שניהן משתמשות במעטפת הגרפית המדהימה <a href="https://gnome.org">GNOME</a>, ושניהם טובות, אז למה בכל זאת אני מעדיף את פדורה?</p>
+
+<p>טוב, אולי עדיין אתם לא מבינים את הביג דיל, אז לאט לאט.</p>
+
+<p>כמו שהסברתי בפוסט <a href="https://linuxuserstip.blogspot.com/2024/05/blog-post.html">מעטפת גרפית בלינוקס</a>, ישנם “הפצות” ש”עוטפות” את הקרנל - הליבה של לינוקס בעטיפות נחמדות. אבל השוני בין ההפצות אינו מסתיים כאן. כל הפצה מוסיפה את הפיצ’רים שלה, את ה”אג’נדה” שלה, ואת מה שמסתדר לה. ולהלן תקראו כמה סיבות למה אני מעדיף את פדורה על פי אובונטו.</p>
+
+<h2 id="מראה-אותנטי-של-גנום-gnome">מראה אותנטי של גנום (gnome)</h2>
+<p>הסיבה הראשונה קשורה למעטפת הגרפית הבסיסית של הפצות מבוססות מעטפת גנום. בין ההפצות שמשתמשות בגנום ניתן למנות את אובונטו, פדורה, ונילה, אופן סוסה, ועוד. בעוד שרוב ההפצות הנזכרות משתמשות במראה הגרפי המקורי של גנום, אובונטו דווקא ייחודית בכך שהיא מוסיפה ומורידה דברים.</p>
+
+<p>בין השינויים של אובנטו:</p>
+
+<ul>
+  <li>מעגן בצד שמאל של שולחן העבודה,</li>
+  <li>כל האייקונים של האפליקציות שמקורם בפרויקט גנום - שונו לערכת נושא של אובונטו,</li>
+  <li>ניראות של קבצים ותיקיות על שולחן העבודה.</li>
+</ul>
+
+<p>בפדורה, לעומת אובונטו, העיצוב הוא אותנטי מבית גנום. האייקונים הייחודיים של גנום, המראה החלק והנקי, הקליל והנעים.</p>
+
+<h2 id="פדורה-בחזית-החדשנות">פדורה בחזית החדשנות</h2>
+<p>בלינוקס מדי תקופה קצרה יוצאים עדכונים לקרנל של מערכת ההפעלה. חוץ מהעדכונים השוטפים שהם ממש כל הזמן. העדכונים התקופתיים מצויינים בגרסת הקרנל. נכון לתאריך כתיבת שורות אלו, גרסת הקרנל עומדת ב-6.9.5.</p>
+
+<p>פדורה מוציאה גרסה חדשה של מערכת ההפעלה כל חצי שנה. כעת בזמן כתיבת שורות אלו, ועל המחשב שנכתבים שורות אלו, פועלת מערכת פדורה גרסה 40, ששוחררה זה לא מכבר חודש וחצי. וכל גרסה חדשה יוצאת עם הקרנל המשודרג.</p>
+
+<p>לעומת זאת אובונטו, מוציאה גרסה חדשה כל שנתיים, ורק אז הם משדרגים את הקרנל למהדורה האחרונה.</p>
+<h2 id="מנהל-חבילות-עוצמתי">מנהל חבילות עוצמתי</h2>
+<p>כבר הסברנו בפוסט <a href="https://linuxuserstip.blogspot.com/2024/03/apt.html">מנהל החבילות אפט</a> על אודות מנהל חבילות ותפקידו במערכת ההפעלה. כעת נרחיב מעט יותר בזה.</p>
+
+<p>כל תוכנה וכל תוכנית שמיועדת לרוץ על מערכת ההפעלה מורכבת מכמה וכמה “חבילות”. הכוונה חבילות היא לקבצי ארכיב או קובצי קוד המכילים את הקוד המקומפל שבעצם הוא הקוד שמפעילים בזמן הרצת התוכנית.</p>
+
+<p>בכל תוכנית ישנם כמה וכמה חבילות, מכמה וכמה שפות, ספריות, ובעיקר כל חבילה מיעדת לשרת חלק אחד מהתוכנית.</p>
+
+<p>למעשה כשאנו מתקינים תוכנה, יכול להווצר מצב שיש במחשבנו שני תוכנות שונוות, אבל הן זקוקות שניהן לחבילה ספציפית אחת. ולכן בלינוקס ישנו “מנהל חבילות” שהוא בודק איזה חבילות יש כבר במחשב ואיזה חסרות על מנת להריץ תוכנה חדשה.</p>
+
+<p>מנהל החבילות בפדורה הוא <code class="language-plaintext highlighter-rouge">dnf</code>, והוא עוצמתי מאוד. בזמן התקנת תוכנית הוא מציג למשתמש את כל החבילות שהוא צריך להתקין, את חבילות התלות, ואת החבילות שיש צורך לשדרג. ובעת הסרת חבילות הוא מציג למשתמש איזה חבילות הוא מסיר, ואיזה הוא “מנקה”, וכולי.</p>
+
+<p>לצד האינטגרציה הנפלאה עם המשתמש, והנוחיות בראיית אופן ביצוע התקנת הסרה ושדרוג, ישנו מאגר עצום של חבילות <code class="language-plaintext highlighter-rouge">rpm</code> מנהל החבילות יודע להתנהל. מגוון עצום של תוכנות ותוכניות זמינות במאגרי <code class="language-plaintext highlighter-rouge">rpm</code> וזמינים להתקנה על ידי מנהל החבילות <code class="language-plaintext highlighter-rouge">dnf</code>.</p>
+
+<h2 id="והנה-עוד-מספר-סיבות">והנה עוד מספר סיבות:</h2>
+<ul>
+  <li>קובצי מערכת פחות מעשרים וחמישה ג”ב ממש כך!</li>
+  <li>קובץ <code class="language-plaintext highlighter-rouge">iso</code> לא גדול מ-2GB</li>
+  <li>פדורה מזהה את סוג הקובץ ויודעת עם איזה תוכנה היא צריכה לפתוח אותו. אמנם גם אובונטו יודעת, אבל עדיין קובצי תוכנות כמו drav.io או xmind אובונטו מתבלבל ופותח אותם עם מנהל ארכיונים.</li>
+  <li>מחלץ ארכיונים בדאבל קליק. אינך צריך להתעסק עם תוכנות ארכיב, מיד הוא מחלץ לתיקייה הנוכחית.</li>
+  <li>תומך בכל סוגי הארכיונים (באובונטו צריך להוריד תוכנה צד ג’ כדי להתמודד עם ארכיב כמו rar).</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[אם לא הבנתם את כותרת הפוסט, אז אסביר: ישנם שני הפצות לינוקס פופלאריות, ושניהן תומכות בעברית בצורה נפלאה, שניהן משתמשות במעטפת הגרפית המדהימה GNOME, ושניהם טובות, אז למה בכל זאת אני מעדיף את פדורה?]]></summary></entry></feed>
