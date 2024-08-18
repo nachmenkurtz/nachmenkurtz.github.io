@@ -1,1 +1,0 @@
-# nachmenkurtz.github.io
