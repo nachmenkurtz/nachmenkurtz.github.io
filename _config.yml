@@ -21,11 +21,12 @@
 title: Learn Linux
 email: nachmenkurtz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ללמוד לינוקס, האתגרים של מתחיל בלינוקס, ומאמרים לתחילים בלינוקס, הכל מכל כל נמצא כאן.
+  Learn Linux - הבלוג.
+  ללמוד לינוקס, האתגרים של מתחיל בלינוקס, ומאמרים למתחילים בלינוקס.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
-#github_username:  nachmenkurtz
+github_username: Nachmen-Kurtz
 
 # Build settings
 theme: minima
