@@ -20,7 +20,8 @@ date: 2025-01-03
 # חשוב:
 גם לאובונטו וגם לפדורה יש הפצות שנגזרות מהן, ולכן גם בנגזרות אובונטו ונגזרות פדורה גם בהן מנהל החבילות הוא כמו שבמקור.
 
----
+## מקור
+[DNF and its APT command equivalents on Fedora :: Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-vs-apt/)
 
-[Source](https://docs.fedoraproject.org/en-US/quick-docs/dnf-vs-apt/)
+
 
