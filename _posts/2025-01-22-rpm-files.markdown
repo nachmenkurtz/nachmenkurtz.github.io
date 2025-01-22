@@ -1,0 +1,28 @@
+---
+layout: post
+title: rpm installed files
+date: 2025-01-22
+---
+
+בעת ההתקנה על ידי מנהל החבילות DNF חבילות RPM מהמאגרים הרשמיים של פדורה RPM קבצי החבילה (התוכנה) נשלחים למקומות שונים במערכת הקבצים של לינוקס.
+
+כדבר ראשון הקבצים הבינאריים הולכים לאחד ממקומי ה- `PATH$`. ושאר הקבצים למקומות שונים.
+
+אז מערכת RPM מספקת לנו מדריך מיוחד ותרשים עץ של כל הקבצים. נוכל לראות זאת בכתובת [Fedora Packages](https://packages.fedoraproject.org/).
+
+### **מדריך מפורט:**
+1. הכנסו לאתר [Fedora Packages](https://packages.fedoraproject.org/).
+
+![fedoraproject.org](/assets/packages.fedoraproject.org.png)
+
+2. בשורת החיפוש הקלידו את שם החבילה, לדוגמא `vlc`.
+
+![VLC_package](/assets/VLC_packages.png)
+
+3. נבחר את החבילה הרצויה מתוך הרשימה, במקרה זה החבילה הראשונה, ובמסך הבא נבחר את החבילה בהתאם למהדורת מערכת ההפעלה.
+
+4. נגלול לסוף הדף, ונראה עץ התיקיות והקבצים.
+
+![VLC_package_files](/assets/VLC_package_files.png)
+
+כך בכל חבילה וחבילה.
