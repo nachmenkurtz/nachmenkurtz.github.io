@@ -235,6 +235,9 @@ sudo systemctl enable vncserver@:1
 ---
 
 Ref:
+
 [Tutorial: Install the GNOME desktop environment on AL2023 - Amazon Linux 2023](https://docs.aws.amazon.com/linux/al2023/ug/installing-gnome-al2023.html)
+
 [Tutorial: Configure TigerVNC server on AL2023 - Amazon Linux 2023](https://docs.aws.amazon.com/linux/al2023/ug/vnc-configuration-al2023.html)
+
 [Manage system users on your Amazon EC2 Linux instance - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html)
